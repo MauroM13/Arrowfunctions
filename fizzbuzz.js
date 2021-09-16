@@ -1,16 +1,25 @@
 
+//grupo Turma 01 NT  Cleiton Bernsmller ; Jonatas Zamperi,  Mauro Lucio Marques, Yasmin Duarte
 
-//let num = 1;
 
-//const FizzBuzz = (num) => {
-  //for(var i = 1; i <= num; i++){
-    //console.log((i % 1 === 0 && i % 13 === 0) ?
-      //            "fizzbuzz" : (i % 13 === 0 ?
-        //            "buzz" : (i % 1 === 0 ?
-          //            "fizz" : i)));
-  //}
-//}
+function fizzBuzz (n1, n2){
+    for (let i = 1; i <= 100; i++) {
+       if(i%n1 == 0 && i%n2 == 0){
+        console.log("FizzBuzz");
+       } 
+       else if(i%n2 == 0){
+           console.log("Buzz...");
+       }
+       
+       else if(i%n1 == 0 ){
+        console.log("Fizz...");
+            
+       }
+       
+       else{
+        console.log(i);
+       }
+    }
+}
 
-for(var i = 1; i < 101; i++) {
-   
- console.log(((f,b) => n => f(n)+b(n))(n => n%3 ? '' : 'fizz', n => n%5 ? '' : 'buzz')(i))}
+fizzBuzz(3,5);
